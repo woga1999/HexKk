@@ -139,9 +139,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="13-2-1.cpp" />
     <ClCompile Include="NeedSpecialFunctionTemplate.cpp" />
     <ClCompile Include="PointClassTemplate.cpp" />
+    <ClCompile Include="PointMain.cpp" />
+    <ClCompile Include="PointTemplate.cpp" />
     <ClCompile Include="SpecialFunctionTemplate.cpp" />
+    <ClCompile Include="TemplateClass.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ArrayTemplate.h" />
+    <ClInclude Include="PointTemplate.h" />
+    <ClInclude Include="PointTemplate2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
