@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D7B150E92403EAE900CD9C89 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D7B150E82403EAE900CD9C89 /* main.c */; };
+		D7D2011024051E3500EC4CDF /* 1932.c in Sources */ = {isa = PBXBuildFile; fileRef = D7D2010F24051E3500EC4CDF /* 1932.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		D7B150E52403EAE900CD9C89 /* C Xcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C Xcode"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B150E82403EAE900CD9C89 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		D7D2010F24051E3500EC4CDF /* 1932.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = 1932.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				D7B150E82403EAE900CD9C89 /* main.c */,
+				D7D2010F24051E3500EC4CDF /* 1932.c */,
 			);
 			path = "C Xcode";
 			sourceTree = "<group>";
@@ -119,6 +122,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7D2011024051E3500EC4CDF /* 1932.c in Sources */,
 				D7B150E92403EAE900CD9C89 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
