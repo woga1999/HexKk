@@ -1,5 +1,5 @@
 
-public class Helloworld{
+public class Game{
 
     public static void main(String []args) {
         PlayerCharacter player = new PlayerCharacter("gamepari", 70, 12);

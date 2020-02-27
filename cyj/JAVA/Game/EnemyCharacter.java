@@ -1,5 +1,5 @@
 
-public EnemyCharacter extends Character() {
+public class EnemyCharacter extends Character {
     
     public EnemyCharacter(String name, int hp, int atk){
         super(name, hp, atk); //내가 상속받은 녀석의 생성자(부모의 기능을 사용하겠다)
@@ -13,12 +13,14 @@ public EnemyCharacter extends Character() {
         }
 
         super.attack(enemy);
+
+        PlayerCharacter player = (PlayerCharacter)enemy;
+
+        if(player.hp <= 30){
+            player.heal(); //형변환
+        }   
     }
-
-    PlayerCharacter player = (PlayerCharacter)enemy;//형변환
-
-    if(player.hp <= 30){
-        player.heal();
-    }
-
+    
 }
+
+  
