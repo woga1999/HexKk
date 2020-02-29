@@ -53,7 +53,7 @@ int main(void)
 	srand((unsigned int)time(NULL));
 	for (int i = 0; i < MAX_ARRAY; ++i)
 	{
-		array[i] = rand()%size_t;
+		array[i] = rand();
 	}
 	dataShow(array);
 	quickSort(array, 0, MAX_ARRAY - 1);
