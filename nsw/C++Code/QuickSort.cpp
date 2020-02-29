@@ -5,9 +5,11 @@
 */
 
 #include <iostream>
+#include <cstdlib>		//랜덤 함수 생성 용
+#include <ctime>	//시간 시드용
 #define MAX_ARRAY 10
 
-int array[MAX_ARRAY] = { 4, 8, 2, 3, 9 ,1 ,6, 10 ,5, 7 };
+int array[MAX_ARRAY] = { 0, };
 
 void quickSort(int *data, int start, int end) {
 	if (start >= end)	//원소가 1개(더 안쪼개질 경우) 냅두기
@@ -48,6 +50,11 @@ void dataShow(const int *data) {
 }
 int main(void)
 {
+	srand((unsigned int)time(NULL));
+	for (int i = 0; i < MAX_ARRAY; ++i)
+	{
+		array[i] = rand()%size_t;
+	}
 	dataShow(array);
 	quickSort(array, 0, MAX_ARRAY - 1);
 	dataShow(array);
