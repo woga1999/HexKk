@@ -4,10 +4,7 @@
 	n*n의 시간복잡도를 보인다.
 */
 
-#include <iostream>
-#define MAX_ARRAY 10
-
-int array[MAX_ARRAY] = { 4, 8, 2, 3, 9 ,1 ,6, 10 ,5, 7 };
+#include "Sort.h"
 
 void quickSort(int *data, int start, int end) {
 	if (start >= end)	//원소가 1개(더 안쪼개질 경우) 냅두기
@@ -37,17 +34,12 @@ void quickSort(int *data, int start, int end) {
 	}
 	quickSort(data, start, j - 1);	//j의 위치에 pivot이 왔으니까 j를 기준으로 반갈죽
 	quickSort(data, j + 1, end);
-
 }
 
-void dataShow(const int *data) {
-	for (int i = 0; i < MAX_ARRAY; ++i) {
-		std::cout << array[i] << " ";
-	}
-	std::cout << "\n";
-}
+
 int main(void)
 {
+	randomInputData(array, 1, 20);
 	dataShow(array);
 	quickSort(array, 0, MAX_ARRAY - 1);
 	dataShow(array);
