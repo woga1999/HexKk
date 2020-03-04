@@ -1,0 +1,72 @@
+struct person
+{
+	char name[MAX];
+	int age;
+	float height;
+}
+
+int main(void)
+{
+	// 구조체의 변수 선언하는 방법
+	struct person genie;
+	
+	// 배열은 string copy함수로 복사해야한다..
+	strcpy(genie.name, "Will Saith");
+	
+	// . 은 구조체멤버에 접근하는 연산자..
+	genie.age = 1000;
+	
+	// 구조체 선언과 동시에 초기화 하기
+	// 주의 할점은 순서가 바뀌면 안된다!!!
+	struct person princess = {"Naomi Scott", 18, 160.0f};
+	
+	struct person princess2 = {
+		"Naomi Scott",
+		18,
+		160.0f
+	}
+	
+	// Designated initializers
+	struct person beauty = {
+		.age = 19,
+		.name = "Bell",
+		.height = 150.0f
+	};
+	
+	// Pointer to a structure variable
+	/ person이라는 태그를 가지는 구조체 변수
+	struct pserson* someone;
+	
+	someone = &genie;
+	
+	someone->age = 1001; // . 대신에 화살표를 대신 사용한다. (*someone).age로 접근 가능하다!!
+	
+	struct book
+	{
+		char title[MAX];
+		float price;
+	}
+	
+	struct
+	{
+		char farm[MAX];
+		float price;
+	}apple, apple2;
+	
+	// typedef and structure
+	typedef struct person my_person;
+	
+	my_pserson p3; 로 선언 가능
+	
+	// 문법상 이렇게 많이 사용한다
+	typedef struct _person person
+	
+	// 구조체를 선언할때 typedef로 선언할수 있다..
+	typedef struct 
+	{
+		char name[MAX];
+		char hobby[MAX];
+	}friend;
+	
+	friend f4;로 변수 만든다.
+}
