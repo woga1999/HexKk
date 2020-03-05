@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1583422518 source:c:\users\parks\desktop\git\hexkk\pks\codeblocks\0306\main.c
+	<stdio.h>
+	<string.h>
+
